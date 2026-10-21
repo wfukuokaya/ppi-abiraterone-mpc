@@ -1,33 +1,23 @@
-# Proton pump inhibitor use in patients with metastatic prostate cancer: individual participant-level meta-analysis of randomized clinical trials
+# Proton pump inhibitors and abiraterone acetate in metastatic prostate cancer
 
-This repository contains the R code used for the post-hoc analysis presented in the research paper "Association between concomitant proton pump inhibitor use and survival of patients with metastatic prostate cancer receiving abiraterone acetate: a post-hoc analysis of pooled data from three randomized controlled trials." The study examines the impact of concomitant proton pump inhibitor (PPI) use on the survival of patients with metastatic prostate cancer treated with androgen deprivation therapy (ADT) and abiraterone acetate plus prednisone (AAP).
+R code for the analysis reported in:
 
-LATITUDE trial: [https://www.nejm.org/doi/full/10.1056/NEJMoa1704174](https://www.nejm.org/doi/full/10.1056/NEJMoa1704174)
+> Association between concomitant proton pump inhibitor use and survival of patients with metastatic prostate cancer receiving abiraterone acetate: a post-hoc analysis of pooled data from three randomized controlled trials. *Prostate Cancer and Prostatic Diseases*. <https://www.nature.com/articles/s41391-023-00695-x>
 
-COU-AA-301 trial: [https://www.nejm.org/doi/full/10.1056/NEJMoa1014618](https://www.nejm.org/doi/full/10.1056/NEJMoa1014618)
+Pooled individual participant data from the LATITUDE, COU-AA-301, and COU-AA-302 trials; restricted mean survival times compared between proton pump inhibitor users and non-users with inverse probability of treatment weighting.
 
-COU-AA-302 trial: [https://www.nejm.org/doi/full/10.1056/NEJMoa1209096](https://www.nejm.org/doi/full/10.1056/NEJMoa1209096)
+## Contents
 
-## Abstract
-This post-hoc study assesses the association between PPI use and survival in patients with metastatic prostate cancer treated with ADT alone or in combination with AAP. The analysis is based on pooled data from the LATITUDE, COU-AA-301, and COU-AA-302 trials. Restricted mean overall survival time (RMOST) and restricted mean progression-free survival time (RMPFST) were compared between PPI users and non-users using inverse probability of treatment weight (IPTW)-adjusted Kaplan-Meier curves and Cox proportional hazards regression models.
-
-## Publication
-The study has been published in **Prostate Cancer and Prostatic Diseases** and is available at the following link: [https://www.nature.com/articles/s41391-023-00695-x](https://www.nature.com/articles/s41391-023-00695-x).
-
-## Repository contents
-
-| File | Description |
-|---|---|
-| `script.R` | Analysis script (R) |
+`script.R`: analysis.
 
 ## Requirements
 
-R (version 4.x) with the following packages: `finalfit`, `ggplot2`, `ggsci`, `survey`, `tableone`.
+R 4.x with `finalfit`, `ggplot2`, `ggsci`, `survey`, `tableone`.
 
-## Data availability
+## Data
 
-This repository contains analysis code only. The patient-level data analysed in the study are not distributed here.
+Patient-level data are not included in this repository.
 
 ## License
 
-The code in this repository is released under the [MIT License](LICENSE).
+[MIT](LICENSE)
